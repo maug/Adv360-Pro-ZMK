@@ -13,22 +13,22 @@
             label = "HOMEROW_MODS_LEFT";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 39 40 41 42 43 44 45 54 55 56 57 58 59 71 72 73 74 75 37 38 53 68 69 70 71 72 35 36 52 65 66 67>;
+            quick-tap-ms = <100>;
         };
         hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <37 38 53 68 69 70 35 36 52 65 66 67 0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 46 47 48 49 50 51 60 61 62 63 64 65 38 70>;
+            quick-tap-ms = <100>;
         };
     };
 
@@ -37,11 +37,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1        &kp N2           &kp N3       &kp N4         &kp N5  &tog 1                                                       &mo 3      &kp N6  &kp N7         &kp N8       &kp N9       &kp N0                       &kp MINUS
-&kp TAB    &kp Q         &kp W            &kp E        &kp R          &kp T   &none                                                        &none      &kp Y   &kp U          &kp I        &kp O        &kp P                        &kp BSLH
-&kp ESC    &hml LCTRL A  &hml LEFT_ALT S  &hml LGUI D  &hml LSHIFT F  &kp G   &none     &kp LCTRL      &kp LALT      &kp RALT   &kp RCTRL  &none      &kp H   &hmr RSHIFT J  &hmr RGUI K  &hmr LALT L  &hmr LEFT_CONTROL SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z         &kp X            &kp C        &kp V          &kp B                            &kp HOME      &kp PG_UP                        &kp N   &kp M          &kp COMMA    &kp DOT      &kp FSLH                     &kp RSHFT
-&mo 2      &kp GRAVE     &kp GRAVE        &kp LEFT     &kp RIGHT              &kp LGUI  &kp BACKSPACE  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP         &kp DOWN     &kp LBKT     &kp RBKT                     &mo 2
+&kp EQUAL  &kp N1        &kp N2           &kp N3       &kp N4         &kp N5  &tog 1                                                         &mo 3      &kp N6  &kp N7         &kp N8       &kp N9       &kp N0                       &kp MINUS
+&kp TAB    &kp Q         &kp W            &kp E        &kp R          &kp T   &none                                                          &none      &kp Y   &kp U          &kp I        &kp O        &kp P                        &kp BSLH
+&kp ESC    &hml LCTRL A  &hml LEFT_ALT S  &hml LGUI D  &hml LSHIFT F  &kp G   &caps_word  &kp LCTRL      &kp LALT      &kp RALT   &kp RCTRL  &none      &kp H   &hmr RSHIFT J  &hmr RGUI K  &hmr LALT L  &hmr LEFT_CONTROL SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z         &mt Z X          &kp C        &kp V          &kp B                              &kp HOME      &kp PG_UP                        &kp N   &kp M          &kp COMMA    &kp DOT      &kp FSLH                     &kp RSHFT
+&mo 2      &kp GRAVE     &kp GRAVE        &kp LEFT     &kp RIGHT              &kp LGUI    &kp BACKSPACE  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP         &kp DOWN     &kp LBKT     &kp RBKT                     &mo 2
             >;
         };
 
