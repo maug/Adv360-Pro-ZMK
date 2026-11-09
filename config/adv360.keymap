@@ -70,11 +70,11 @@
         no_homemod {
             display-name = "no_homemod";
             bindings = <
-&trans     &trans  &trans  &trans  &trans  &trans  &trans                                                                     &mo 3  &trans  &trans  &trans  &trans  &trans         &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &none                                                                      &none  &trans  &trans  &trans  &trans  &trans         &trans
-&kp ESC    &kp A   &kp S   &kp D   &kp F   &kp G   &trans            &kp LCTRL  &kp LALT     &kp LGUI   &kp RCTRL             &none  &kp H   &kp J   &kp K   &kp L   &kp SEMICOLON  &trans
-&kp LSHFT  &trans  &trans  &trans  &trans  &trans                               &kp ENTER    &kp PG_UP                               &trans  &trans  &trans  &trans  &trans         &trans
-&mo 2      &trans  &trans  &trans  &trans                  &kp BSPC  &kp DEL    &kp SPACE    &kp PG_DN  &kp ENTER  &kp SPACE                 &trans  &trans  &trans  &trans         &mo 2
+&trans     &trans  &trans  &trans  &trans  &trans  &trans                                                                     &mo 3   &trans  &trans  &trans  &trans  &trans         &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans                                                                     &trans  &trans  &trans  &trans  &trans  &trans         &trans
+&trans     &kp A   &kp S   &kp D   &kp F   &kp G   &trans            &kp LCTRL  &kp LALT     &kp LGUI   &kp RCTRL             &trans  &kp H   &kp J   &kp K   &kp L   &kp SEMICOLON  &trans
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans                               &kp ENTER    &kp PG_UP                                &trans  &trans  &trans  &trans  &trans         &trans
+&mo 2      &trans  &trans  &trans  &trans                  &kp BSPC  &kp DEL    &kp SPACE    &kp PG_DN  &kp ENTER  &kp SPACE                  &trans  &trans  &trans  &trans         &mo 2
             >;
         };
 
